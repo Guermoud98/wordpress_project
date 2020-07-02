@@ -1,0 +1,569 @@
+/*
+Theme Name: Unos Business
+Template: unos
+Author: wpHoot
+Author URI: https://wphoot.com/
+Theme URI: https://wphoot.com/themes/unos-business/
+Version: 1.0.2
+Description: Professional Business theme for small businesses, church, stores and online SEO and marketing businesses. SEO optimized and translation ready. Compatible with popular plugins like Woocommerce, Jetpack, Yoast SEO, and Page Builders. Theme support is available at https://wphoot.com/support/ You can also check out the theme instructions at https://wphoot.com/support/unos-business/ and demo at https://demo.wphoot.com/unos-business/ for a closer look.
+License: GNU General Public License 3.0
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Tags: grid-layout, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready, e-commerce, education, news
+Text Domain: unos-business
+*/
+/**
+ * -----------------------------------------------------------------------------------------------
+ * PLEASE DO NOT MODIFY THIS FILE DIRECTLY UNLESS YOU KNOW WHAT YOU ARE DOING
+ * 
+ ** 'Additional Custom CSS' / 'Custom CSS' section in Customize Screen
+ *  - This is the preferred location for small css snippets
+ *  - These CSS rules are given highest priority
+ *  - Your customizations remains unaffected by Theme updates (IMPORTANT!)
+ * -----------------------------------------------------------------------------------------------
+ */
+body {
+  line-height: 1.6em;
+}
+blockquote small,
+blockquote cite {
+  line-height: 1.6em;
+}
+.sub-footer,
+.footer,
+.widget_breadcrumb_navxt,
+.sidebar {
+  line-height: 1.6em;
+}
+.widget_breadcrumb_navxt .breadcrumbs > .hoot-bcn-pretext:after {
+  border-top: 1.3em solid transparent;
+  border-bottom: 1.3em solid transparent;
+}
+/************* Headings *************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  font-weight: 600;
+}
+.titlefont {
+  font-weight: 600;
+}
+#topbar {
+  overflow: inherit;
+}
+/**
+ * Header (Topbar, Header, Main Nav Menu)
+ * ========================================================
+ */
+/************* Topbar *************/
+#topbar.js-search .searchform.expand .searchtext {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.33);
+}
+/************* Header Layout *************/
+#header {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.33);
+}
+#header-primary,
+#header-supplementary {
+  border-bottom: none;
+}
+#header-supplementary {
+  background: #fff;
+}
+#header-supplementary {
+  background: #272727;
+  color: #ffffff;
+}
+#header-supplementary h1,
+#header-supplementary h2,
+#header-supplementary h3,
+#header-supplementary h4,
+#header-supplementary h5,
+#header-supplementary h6,
+#header-supplementary .title {
+  color: inherit;
+  margin: 0;
+}
+#header-supplementary .js-search .searchform.expand .searchtext {
+  background: #272727;
+  color: inherit;
+}
+#header-supplementary .js-search-placeholder {
+  color: inherit;
+}
+#header-supplementary .menu-items > li > a {
+  color: #ffffff;
+}
+#header-supplementary .menu-items li.current-menu-item,
+#header-supplementary .menu-items li.current-menu-ancestor,
+#header-supplementary .menu-items li:hover {
+  background: #248ed0;
+}
+#header-supplementary .menu-items li.current-menu-item > a,
+#header-supplementary .menu-items li.current-menu-ancestor > a,
+#header-supplementary .menu-items li:hover > a {
+  color: #ffffff;
+}
+#header-supplementary .menu-side-box {
+  color: inherit;
+}
+.header-supplementary a,
+.header-supplementary a:hover {
+  color: inherit;
+}
+.header-supplementary .widget_text a {
+  text-decoration: underline;
+}
+.header-supplementary .widget_text a:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 969px) {
+  #header-supplementary .mobilemenu-fixed .menu-toggle,
+  #header-supplementary .mobilemenu-fixed .menu-items {
+    background: #272727;
+  }
+}
+@media only screen and (max-width: 969px) {
+  #header-aside {
+    padding: 0;
+    border-top: none;
+  }
+}
+/************* Logo *************/
+/* Text Logo */
+#site-title {
+  font-weight: 600;
+  font-size: 28px;
+}
+#site-description {
+  margin: 5px 0;
+}
+.site-logo-text-tiny #site-title {
+  font-size: 16px;
+}
+.site-logo-text-medium #site-title {
+  font-size: 45px;
+}
+.site-logo-text-large #site-title {
+  font-size: 60px;
+}
+.site-logo-text-huge #site-title {
+  font-size: 75px;
+}
+/* Custom Text */
+.site-title-line b,
+.site-title-line strong {
+  font-weight: bold;
+  font-weight: 600;
+}
+/*** Responsive Logo ***/
+@media only screen and (max-width: 969px) {
+  #page-wrapper #site-description {
+    margin: 5px 7px;
+  }
+}
+/************* Nav Menus *************/
+@media only screen and (max-width: 969px) {
+  .mobilemenu-inline {
+    border-top: solid 1px rgba(0, 0, 0, 0.33);
+  }
+}
+@media only screen and (min-width: 970px) {
+  .header-supplementary-center .menu-items > li > a {
+    text-align: center;
+  }
+  .header-supplementary-center .nav-menu .sf-menu.sf-arrows > li > a.sf-with-ul {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .header-supplementary-center .sf-menu.sf-arrows .sf-with-ul .menu-title:after {
+    position: relative;
+    right: -5px;
+    margin: 0;
+    top: 0;
+  }
+  .header-supplementary-center .sf-menu.sf-arrows ul .sf-with-ul .menu-title:after {
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    margin-top: -0.5em;
+  }
+}
+/************* Menu Side Header *************/
+@media only screen and (max-width: 969px) {
+  .menu-area-wrap .menu-side-box {
+    border-top: solid 1px rgba(0, 0, 0, 0.33);
+  }
+}
+/************* Below Header *************/
+.below-header {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.14);
+  background: rgba(0, 0, 0, 0.04);
+  padding: 0;
+  -webkit-box-shadow: inset 0px -8px 12px -8px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px -8px 12px -8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -8px 12px -8px rgba(0, 0, 0, 0.2);
+}
+/**
+ * Main #Content
+ * ========================================================
+ */
+/** Use 'entry-content'/'entry-the-content' classes to style posts on single post pages specifically **/
+/************* Loop Meta *************/
+.main.fullwidth > .loop-meta-wrap {
+  position: relative;
+  text-align: center;
+}
+.main.fullwidth > .loop-meta-wrap.pageheader-bg-default,
+.main.fullwidth > .loop-meta-wrap.pageheader-bg-stretch,
+.main.fullwidth > .loop-meta-wrap.pageheader-bg-both {
+  background: none;
+  border-top: solid 1px rgba(0, 0, 0, 0.33);
+  border-bottom: none;
+}
+.main.fullwidth > .loop-meta-wrap.pageheader-bg-default:after,
+.main.fullwidth > .loop-meta-wrap.pageheader-bg-stretch:after,
+.main.fullwidth > .loop-meta-wrap.pageheader-bg-both:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid 3px;
+  background: none;
+  font: 0/0 a;
+  visibility: visible;
+  display: block;
+}
+.main.fullwidth > .loop-meta-wrap.pageheader-bg-incontent,
+.main.fullwidth > .loop-meta-wrap.pageheader-bg-none {
+  border-top: solid 1px rgba(0, 0, 0, 0.33);
+  border-bottom: none;
+}
+.main.fullwidth > .loop-meta-wrap.pageheader-bg-incontent:after,
+.main.fullwidth > .loop-meta-wrap.pageheader-bg-none:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid 3px;
+  background: none;
+  font: 0/0 a;
+  visibility: visible;
+  display: block;
+}
+.main.fullwidth > .loop-meta-wrap#loop-meta.loop-meta-imgwrap .loop-meta {
+  background: none;
+  color: inherit;
+  display: block;
+  margin: 0;
+}
+.main.fullwidth > .loop-meta-wrap#loop-meta.loop-meta-imgwrap .loop-meta h1,
+.main.fullwidth > .loop-meta-wrap#loop-meta.loop-meta-imgwrap .loop-meta h2,
+.main.fullwidth > .loop-meta-wrap#loop-meta.loop-meta-imgwrap .loop-meta h3,
+.main.fullwidth > .loop-meta-wrap#loop-meta.loop-meta-imgwrap .loop-meta h4,
+.main.fullwidth > .loop-meta-wrap#loop-meta.loop-meta-imgwrap .loop-meta h5,
+.main.fullwidth > .loop-meta-wrap#loop-meta.loop-meta-imgwrap .loop-meta h6,
+.main.fullwidth > .loop-meta-wrap#loop-meta.loop-meta-imgwrap .loop-meta a {
+  color: inherit;
+}
+/*** Featured Image without Title (title inline with content) ***/
+.entry-featured-img-headerwrap {
+  height: 400px;
+}
+/************* Content Wrap *************/
+.main.fullwidth > .content .loop-meta-wrap {
+  margin-bottom: 1em;
+  border: solid 1px rgba(0, 0, 0, 0.14);
+  background: none;
+}
+.main.fullwidth > .content .loop-meta-wrap > .hgrid {
+  padding: 0;
+}
+.main.fullwidth > .content .loop-meta-wrap.pageheader-bg-default,
+.main.fullwidth > .content .loop-meta-wrap.pageheader-bg-stretch,
+.main.fullwidth > .content .loop-meta-wrap.pageheader-bg-none {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 1em 1.5em;
+  border: solid rgba(0, 0, 0, 0.14);
+  border-width: 1px 2px 2px 1px;
+  text-align: center;
+}
+.main.fullwidth > .content .loop-meta-wrap.pageheader-bg-default:after,
+.main.fullwidth > .content .loop-meta-wrap.pageheader-bg-stretch:after,
+.main.fullwidth > .content .loop-meta-wrap.pageheader-bg-none:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid 3px;
+  background: none;
+  font: 0/0 a;
+  visibility: visible;
+  display: block;
+}
+.main.fullwidth > .content .loop-meta-wrap.pageheader-bg-incontent,
+.main.fullwidth > .content .loop-meta-wrap.pageheader-bg-both {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 1em 1.5em;
+  border: solid rgba(0, 0, 0, 0.14);
+  border-width: 1px 2px 2px 1px;
+}
+.main.fullwidth > .content .loop-meta-wrap.pageheader-bg-incontent:after,
+.main.fullwidth > .content .loop-meta-wrap.pageheader-bg-both:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid 3px;
+  background: none;
+  font: 0/0 a;
+  visibility: visible;
+  display: block;
+}
+.main.fullwidth > .content .loop-meta {
+  padding: 0;
+}
+.main.fullwidth > .content .loop-title {
+  font-size: 2.3333em;
+}
+/************* Entry Meta Byline (Singular Post Page) *************/
+.main.fullwidth .entry-footer .entry-byline {
+  line-height: 1.3333em;
+  text-transform: uppercase;
+  border-bottom: solid 1px;
+  display: block;
+  position: relative;
+}
+.main.fullwidth .entry-footer .entry-byline-block {
+  display: block;
+}
+.main.fullwidth .entry-footer .entry-byline-block:after {
+  content: "";
+  margin: 0 15px;
+}
+.main.fullwidth .entry-footer .entry-byline a {
+  color: inherit;
+}
+.main.fullwidth .entry-footer .entry-byline a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+.main.fullwidth .entry-footer .entry-byline-label {
+  margin-right: 5px;
+}
+.main.fullwidth .entry-footer .entry-byline-cats a {
+  background: rgba(0, 0, 0, 0.14);
+  padding: 5px 7px;
+  margin: 0 8px 0 0;
+}
+.main.fullwidth .entry-footer .entry-byline-tags a {
+  background: rgba(0, 0, 0, 0.14);
+  padding: 5px 7px;
+  margin: 0 8px 0 0;
+}
+/************* <main> #content *************/
+.main.fullwidth .content-wrap .header-side .widget,
+.main.fullwidth .content-wrap .menu-side .widget,
+.main.fullwidth .content-wrap .topbar .widget,
+.main.fullwidth .content-wrap .below-header .widget {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+.main.fullwidth .content-wrap .header-side .widget:after,
+.main.fullwidth .content-wrap .menu-side .widget:after,
+.main.fullwidth .content-wrap .topbar .widget:after,
+.main.fullwidth .content-wrap .below-header .widget:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid 3px;
+  background: none;
+  font: 0/0 a;
+  visibility: visible;
+  display: block;
+}
+.main.fullwidth .content-wrap .header-side .widget > a,
+.main.fullwidth .content-wrap .menu-side .widget > a,
+.main.fullwidth .content-wrap .topbar .widget > a,
+.main.fullwidth .content-wrap .below-header .widget > a {
+  text-decoration: underline;
+}
+.main.fullwidth .content-wrap .header-side .widget .widget-title,
+.main.fullwidth .content-wrap .menu-side .widget .widget-title,
+.main.fullwidth .content-wrap .topbar .widget .widget-title,
+.main.fullwidth .content-wrap .below-header .widget .widget-title {
+  font-size: inherit;
+  color: inherit;
+  background: none;
+}
+/************* Entry Meta Byline (Singular Post Page) *************/
+.entry-byline {
+  font-size: 0.86666667em;
+  text-transform: uppercase;
+}
+/************* <main> #content *************/
+.main > .main-content-grid:first-child {
+  margin-top: 25px;
+  /*@widgetMargin/2*/
+}
+.content-frontpage > .frontpage-area-boxed:first-child {
+  margin-top: 25px;
+  /*@widgetMargin/2*/
+}
+.frontpage-widgetarea.frontpage-area-boxed:first-child .hootkitslider-widget {
+  margin: 0;
+}
+/*Overwrite parent css since we are now reducing first boxed area margin-top*/
+.sidebar .widget-title,
+.sub-footer .widget-title,
+.footer .widget-title {
+  font-weight: 600;
+}
+/**
+ * Theme and WordPress Plugins
+ * ========================================================
+ */
+/************* Newsletter *************/
+/*** Newsletter ***/
+.widget_newsletterwidget,
+.widget_newsletterwidgetminimal {
+  background: #248ed0;
+  color: #ffffff;
+}
+.widget_newsletterwidget .widget-title,
+.widget_newsletterwidgetminimal .widget-title {
+  color: inherit;
+  font-style: normal;
+  border: none;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.widget_newsletterwidget label,
+.widget_newsletterwidgetminimal label {
+  font-weight: normal;
+  margin: 0 0 3px 2px;
+}
+.widget_newsletterwidget input.tnp-submit[type=submit],
+.widget_newsletterwidgetminimal input.tnp-submit[type=submit] {
+  border: 1px solid;
+}
+.widget_newsletterwidget input.tnp-submit[type=submit]:hover,
+.widget_newsletterwidgetminimal input.tnp-submit[type=submit]:hover {
+  color: inherit;
+  background: rgba(0, 0, 0, 0.2);
+}
+.widget_newsletterwidget input[type=text],
+.widget_newsletterwidgetminimal input[type=text],
+.widget_newsletterwidget input[type=email],
+.widget_newsletterwidgetminimal input[type=email],
+.widget_newsletterwidget select,
+.widget_newsletterwidgetminimal select {
+  background: rgba(0, 0, 0, 0.1);
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  color: inherit;
+}
+.tnp-widget-minimal input.tnp-submit {
+  border: 1px solid;
+  border-color: inherit;
+}
+/**
+ * Footer
+ * ========================================================
+ */
+/************* Sub Footer *************/
+.sub-footer {
+  background: #272727;
+  color: #ffffff;
+  position: relative;
+  border-top: solid 1px rgba(0, 0, 0, 0.14);
+}
+.sub-footer h1,
+.sub-footer h2,
+.sub-footer h3,
+.sub-footer h4,
+.sub-footer h5,
+.sub-footer h6,
+.sub-footer .title {
+  color: inherit;
+}
+.sub-footer a:not(input):not(.button),
+.sub-footer .more-link,
+.sub-footer .content-block-icon i {
+  color: inherit;
+}
+.sub-footer a:hover:not(input):not(.button) {
+  text-decoration: underline;
+}
+.sub-footer .more-link a:hover {
+  text-decoration: none !important;
+}
+.sub-footer .icon-style-circle,
+.sub-footer .icon-style-square {
+  border-color: inherit;
+}
+.sub-footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.12);
+}
+/************* Footer *************/
+.footer {
+  background: #272727;
+  color: #ffffff;
+}
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6,
+.footer .title {
+  color: inherit;
+}
+.footer a:not(input):not(.button),
+.footer .more-link,
+.footer .more-link:hover,
+.footer .content-block-icon i {
+  color: inherit;
+}
+.footer a:hover:not(input):not(.button) {
+  text-decoration: underline;
+}
+.footer .more-link a:hover {
+  text-decoration: none !important;
+}
+.footer .icon-style-circle,
+.footer .icon-style-square {
+  border-color: inherit;
+}
+/************* Post Footer *************/
+.post-footer {
+  background: #272727;
+  color: #ffffff;
+  -webkit-box-shadow: inset 0px 8px 18px -6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 8px 18px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 8px 18px -6px rgba(0, 0, 0, 0.4);
+  border-top: solid 1px rgba(0, 0, 0, 0.33);
+}
+.post-footer > .hgrid {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.post-footer a,
+.post-footer a:hover {
+  color: inherit;
+}
